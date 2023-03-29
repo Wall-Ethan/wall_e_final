@@ -11,14 +11,13 @@ html, body { height: 100% }
 
 body { 
   font-family: sans-serif;
-  background-color: rgb(184, 177, 177);
-  color: rgb(255, 255, 255);
+  background-color: rgb(52, 224, 236);
+  color: rgb(17, 0, 255);
 }
 
 /* main header rules */
 header {
-    background-color: rgb(184, 177, 177);
-    position: sticky;
+    background-color: rgb(32, 184, 255);
     top: 0;
     text-align: center;
 }
@@ -28,7 +27,7 @@ header {
 /* main rules here */
 #character_nav {
     text-align: center;
-    background-color: #635050;
+    background-color: #506063;
 
     background-image: url('../img/destiny_background.jpg');
     background-repeat: no-repeat;
@@ -64,7 +63,7 @@ header {
 .bumper {
     width: 100%;
     height: 6px;
-    background-color: rgb(182, 178, 192);
+    background-color: rgb(104, 72, 184);
 
     transition: height 0.2s ease;
 
@@ -103,10 +102,10 @@ article h2 {
     background-image: url('../img/sprite.jpg');
 }
 
-#arc { background-position: -450px 0; }
-#void { background-position: -950px 0; }
-#stasis { background-position: -1460px 0; }
-#strand { background-position: -1800px 0; }
+#dmc { background-position: -450px 0; }
+#doom { background-position: -950px 0; }
+#overcooked { background-position: -1460px 0; }
+#persona { background-position: -1820px 0; }
 
 .sprite:hover { background-position-y: -170px !important; }
 /* footer rules here */
@@ -135,7 +134,7 @@ footer {
     left: 0;
 
     background-color: rgba(55, 53, 58, 0.85);
-    background-image: url('../img/solar_classes.jpg');
+    background-image: url('../img/destiny_back.jpg');
     background-repeat: no-repeat;
 
     background-size: 1000px; /* 55% of the viewport height */
@@ -146,10 +145,10 @@ footer {
     display: none;
 }
 
-#lightbox2 { background-image: url('../img/arc_classes.jpg'); }
-#lightbox3 { background-image: url('../img/void_classes.jpg');}
-#lightbox4 {background-image: url('../img/stasis_classes.jpg');}
-#lightbox5 {background-image: url('../img/strand_classes.jpg');}
+#lightbox2 { background-image: url('../img/dmc_back.jpg'); }
+#lightbox3 { background-image: url('../img/doom_back.jpg');}
+#lightbox4 {background-image: url('../img/overcooked_back.jpg');}
+#lightbox5 {background-image: url('../img/persona_back.jpg');}
 
 .lightbox_close {
     position: relative;
@@ -185,13 +184,7 @@ footer {
 .lightbox:target { display: block; }
 
 [type="checkbox"]:checked + label {
-    color: rgb(88, 87, 85);
+    color: rgb(17, 0, 255);
     font-style: oblique;
 }
 
-[type="checkbox"]:checked:after {
-    content: 'Great Choice';
-    color: aliceblue;
-    margin-left: 55px;
-    text-transform: none;
-}
