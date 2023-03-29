@@ -11,13 +11,13 @@ html, body { height: 100% }
 
 body { 
   font-family: sans-serif;
-  background-color: rgb(255, 24, 24);
-  color: rgb(0, 0, 0);
+  background-color: rgb(184, 177, 177);
+  color: rgb(255, 255, 255);
 }
 
 /* main header rules */
 header {
-    background-color: rgb(92, 8, 8);
+    background-color: rgb(184, 177, 177);
     position: sticky;
     top: 0;
     text-align: center;
@@ -28,9 +28,9 @@ header {
 /* main rules here */
 #character_nav {
     text-align: center;
-    background-color: #e72727;
+    background-color: #635050;
 
-    background-image: url('../images/dnd_banner.jpg');
+    background-image: url('../img/destiny_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -43,17 +43,17 @@ header {
     position: relative;
     display: inline-block;
     height: 220px;
-    margin: 10px 8px;
+    margin: 300px 10px 300px;
 
     background-color: rgb(0, 0, 0);
 
-    text-align: left;
+    text-align: centre;
     cursor: pointer;
 }
 
 .characters li h5 {
     position: relative;
-    color: rgb(92, 115, 179);
+    color: rgb(250, 250, 250);
     padding: 12px 8px;
 
     z-index: 500;
@@ -64,14 +64,14 @@ header {
 .bumper {
     width: 100%;
     height: 6px;
-    background-color: rgb(72, 6, 255);
+    background-color: rgb(182, 178, 192);
 
     transition: height 0.2s ease;
 
     position: absolute;
 }
 
-.characters li:hover .red_bumper { height: 70px; }
+.characters li:hover .bumper { height: 70px; }
 
 article { padding: 20px; }
 
@@ -97,22 +97,21 @@ article h2 {
 }
 
 .sprite {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 175px;
 
-    background-image: url('../images/dndsprites.jpg');
+    background-image: url('../img/sprite2.jpg');
 }
 
-#bard { background-position: -150px 0; }
-#cleric { background-position: -300px 0; }
-#fighter { background-position: -450px 0; }
-#rouge { background-position: -600px 0; }
-#Wizard { background-position: -750px 0;}
+#arc { background-position: -450px 0; }
+#void { background-position: -950px 0; }
+#stasis { background-position: -1460px 0; }
+#strand { background-position: -1800px 0; }
 
-.sprite:hover { background-position-y: -150px !important; }
+.sprite:hover { background-position-y: -170px !important; }
 /* footer rules here */
 footer {
-    color: rgb(72, 6, 255);
+    color: rgb(180, 171, 171);
     padding: 20px 0;
     text-align: center;
 }
@@ -122,7 +121,7 @@ footer {
     top: 100%;
 
     height: 80px;
-    background-color: rgb(83, 9, 9);
+    background-color: rgb(37, 30, 30);
 }
 
 /* lightbox rules here */
@@ -135,22 +134,22 @@ footer {
     top: 0;
     left: 0;
 
-    background-color: rgba(72, 6, 255, 0.85);
-    background-image: url('../images/barbarian.jpg');
+    background-color: rgba(55, 53, 58, 0.85);
+    background-image: url('../img/solar_classes.jpg');
     background-repeat: no-repeat;
 
-    background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
+    background-size: 1000px; /* 55% of the viewport height */
+    background-position: 10px, 70px center;
 
     z-index: 5000;
 
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/bard.jpg'); }
-#lightbox3 { background-image: url('../images/cleric.jpg');}
-#lightbox4 {background-image: url('../images/fighter.jpg');}
-#lightbox5 {background-image: url('../images/rouge.jpg');}
+#lightbox2 { background-image: url('../img/arc_classes.jpg'); }
+#lightbox3 { background-image: url('../img/void_classes.jpg');}
+#lightbox4 {background-image: url('../img/stasis_classes.jpg');}
+#lightbox5 {background-image: url('../img/strand_classes.jpg');}
 
 .lightbox_close {
     position: relative;
